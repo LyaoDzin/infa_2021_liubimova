@@ -1,0 +1,18 @@
+r = list()
+numbers = input()
+
+while numbers!='':
+    r.append(int(numbers))
+    numbers = input()
+
+r.sort()
+print(r)
+
+if len(r) % 2 == 0:
+    b=(r,[len(numbers)//2])
+    print(float(b))
+
+elif len(r) % 2 == 1:
+    k=((r[len(r)//2-1]) + (r[len(r)//2+1]))/2
+    print(float(k))
+
